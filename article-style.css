@@ -12,44 +12,6 @@ html, body {
 
 }
 
-.header {
-    grid-area: h;
-    background-color: white;
-    color: black;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 5vh;
-    position: fixed;
-}
-
-#nome-revista {
-    grid-column: 1/2;
-    align-self: center;
-    left:0;
-
-}
-
-#descricao {
-    grid-column: 5/8;
-    align-self: center;
-    justify-self: center;
-}
-
-.menu {
-    grid-area: m;
-    background-color: transparent;
-    font-size: 1.2em;
-    position: fixed;
-    top:5%;
-}
-
-.menu ul {
-    font-family: "PT Sans";
-    font-size: 0.8rem;
-    list-style-type: none;
-    padding:0;
-}
-
 .content {
     display: grid;
     grid-template-columns: repeat(8, 1fr);

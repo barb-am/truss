@@ -1,11 +1,3 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: jorgesilva
- * Date: 05/12/17
- * Time: 14:02
- */ ?>
-
 <html>
 <head>
     <link rel="stylesheet" href="article-style.css">
@@ -15,18 +7,8 @@
 </head>
 <body>
 <div class="container">
-    <div class="header">
-        <span id="nome-revista">TRUSS</span>
-        <span id="descricao"> A DESIGN AND SCIENCE MAGAZINE</span>
-    </div>
 
-    <div class="menu">
-        <ul>
-            <li>ARQUIVO</li>
-            <li>DIVULGAÇÕES</li>
-            <li>LOJA</li>
-        </ul>
-    </div>
+    <? include 'navbar.php' ?>
 
     <div class="content">
         <div class="titulo">
