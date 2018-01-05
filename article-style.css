@@ -1,20 +1,20 @@
 html, body {
-    background: #ffffff;
+    background-color: whitesmoke;
     font-family: "PT Sans";
 }
 
 .container {
     display: grid;
-    grid-gap: 5px;
+    grid-gap: 1px;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 5vh 90vh 3vh;
-    grid-template-areas: "h h h h h h h h h h h h" "m m c c c c c c c c . ." "f f f f f f f f f f f f";
+    grid-template-areas: "h h h h h h h h h h h h" "m m c c c c c c c c c c" "f f f f f f f f f f f f";
 
 }
 
 .header {
     grid-area: h;
-    background-color: white;
+    background-color: whitesmoke;
     color: black;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -25,7 +25,7 @@ html, body {
 #nome-revista {
     grid-column: 1/2;
     align-self: center;
-    left:0;
+    left: 0;
 
 }
 
@@ -40,55 +40,217 @@ html, body {
     background-color: transparent;
     font-size: 1.2em;
     position: fixed;
-    top:5%;
+    top: 5%;
 }
 
 .menu ul {
     font-family: "PT Sans";
     font-size: 0.8rem;
     list-style-type: none;
-    padding:0;
+    padding: 0;
 }
 
 .content {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(8, 1fr);
-    grid-gap: 20px;
+    grid-gap: 100px;
     grid-area: c;
     overflow: auto;
 }
 
-
 .titulo {
-    position:static;
-    grid-column: 1/4;
-    grid-row: 1/9;
-    border-right: 1px solid black;
-    background-color: deepskyblue;
+
+    grid-column: 1/3;
+    grid-row: 1/4;
+    height: 90%;
+    margin-bottom: 0;
 }
 
-.nome-artigo{
-    position: absolute;
-    font-size: 2rem;
+.nome-artigo {
+    position: fixed;
+    padding-top: 2%;
+    font-size: 4rem;
+    text-align: left;
+    font-family: "PT Mono";
+}
+
+.destaque {
+    margin-top: 2%;
+    position: fixed;
+    font-size: 1.4rem;
+
+}
+
+.intro {
+    height: 110%;
+    margin-top: -10%;
+    grid-column: 1/4;
+    grid-row: 3/9;
+    font-family: "PT Serif";
+    text-align: left;
+    /* -webkit-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.12);
+     -moz-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.12);
+     box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.12);
+     z-index: 3;*/
+}
+
+.intos {
+    bottom: 4%;
+    position: fixed;
+    width: 25%;
+}
+
+.artigo {
+    grid-column: 4/9;
+    margin-left: 2%;
+    text-align: left;
+    width: 650px;
+    font-size: 18px;
+    line-height: 28px;
+    font-family: "PT Serif";
+    z-index: 3;
+    padding-left: 0;
+    height: 100vh;
+}
+
+.poema {
+    font-family: "PT Serif";
+    font-size: 14px;
+    line-height: 12px;
+    text-align: left;
+    padding-left: 1%;
+    margin-left: 5%;
+}
+
+.intro2 {
     text-align: left;
 }
 
-.nome-artigo #descricao-artigo{
-    padding-top:300px;
-    position: absolute;
-    text-align: justify;
+.recomendacoes {
     font-family: "PT Serif";
-    font-size: 1rem;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+    padding-left: 1%;
+    margin-left: 5%;
 }
 
-
-.artigo{
-    grid-column: 4/9;
-    grid-row: 1/9;
-    background-color: pink;
+hr {
+    width: 300px;
+    left: 150px;
 }
 
+.referencia {
+    padding-bottom: 4%;
+    padding-top: 1%;
+    font-size: 12px;
+    line-height: 5px;
+    text-align: center;
+}
+
+.lateral {
+    grid-column: 11/13;
+    grid-row: 2/3;
+    visibility: visible;
+    z-index: 30 !important;
+}
+
+.l1 {
+    margin-left: 10%;
+}
+
+.nome-l1 {
+    text-align: left;
+    font-family: "PT Mono";
+    font-size: 1.8rem;
+}
+
+.descricao-l1 {
+    position: absolute;
+    margin-top: -1%;
+    text-align: left;
+    font-style: italic;
+    font-family: "PT Serif";
+}
+
+.l1 hr  {
+    border-color: black;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    width: 91%;
+    margin-top: 20%;
+    text-align: left;
+}
+
+.l2 {
+    margin-top:20%;
+    margin-left: 10%;
+    background-color: orange;
+    height:200px;
+}
+
+.nome-l2 {
+    text-align: left;
+    font-family: "PT Mono";
+    font-size: 1.8rem;
+
+}
+
+.descricao-l2 {
+    position: absolute;
+    margin-top: 0.5%;
+    text-align: left;
+    font-style: italic;
+    font-family: "PT Serif";
+}
+
+.l2 hr  {
+    border-color: black;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    width: 91%;
+    margin-top: 20%;
+    text-align: left;
+}
+
+.l3 {
+    margin-top:20%;
+    margin-left: 10%;
+}
+
+.nome-l3 {
+    text-align: left;
+    font-family: "PT Mono";
+    font-size: 1.8rem;
+}
+
+.descricao-l3 {
+    position: absolute;
+    margin-top: 0.5%;
+    text-align: left;
+    font-style: italic;
+    font-family: "PT Serif";
+}
+
+.l3 hr  {
+    border-color: black;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    width: 91%;
+    margin-top: 20%;
+    text-align: left;
+}
+
+.categoria{
+    font-family: "PT Sans";
+    font-size: 0.8rem;
+}
+
+p .categoria{
+
+    margin-top:-30px;
+}
 
 .footer {
     grid-area: f;

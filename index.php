@@ -16,7 +16,7 @@
 <body>
 <div class="container">
     <div class="header">
-        <span id="nome-revista">TRUSS</span>
+        <span id="nome-revista"><a href="index.php">TRUSS</a></span>
         <span id="descricao"> A DESIGN AND SCIENCE MAGAZINE</span>
     </div>
 
@@ -32,7 +32,7 @@
 
         <!-- ***** ABOVE THE FOLD ESQUERDA***** -->
         <div class="conto">
-            <a href="article.php"><img src="manwho.png"></a>
+            <a href="conto.php"><img src="manwho.png"></a>
             <span class="categoria"> CONTO</span>
             <span id="nomeconto">The Man Who Planted Trees <br> and Grew Happiness</span>
             <span id="descricaoconto">A man plants trees and a region is changed. His story is told and a world is changed.</span>
